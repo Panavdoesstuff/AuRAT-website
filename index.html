@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuraT — AI-Powered Women’s Safety Ecosystem · Genesis 2026</title>
+  <meta name="description"
+    content="AuraT is a wearable and cloud ecosystem that passively monitors, captures evidence, and alerts your network—without pressing a button." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <aside class="rotate-hint" id="rotateHint" aria-live="polite">
+    <p>For the full experience, rotate to portrait.</p>
+    <button type="button" class="rotate-hint__dismiss" id="rotateDismiss">Continue anyway</button>
+  </aside>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="AuRAT home">
+      <span class="logo__mark">AuRAT</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#pricing">PRICING</a>
+      <a href="#product">PRODUCT</a>
+      <a href="#features">FEATURES</a>
+      <a href="#about">ABOUT US</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navPanel" id="navToggle">
+      <span class="nav-toggle__bars"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </header>
+
+  <div class="nav-panel" id="navPanel" hidden>
+    <a href="#pricing">PRICING</a>
+    <a href="#product">PRODUCT</a>
+    <a href="#features">FEATURES</a>
+    <a href="#about">ABOUT US</a>
+  </div>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero reveal" aria-labelledby="heroTitle">
+      <div class="hero__bg"></div>
+      <p class="hero__eyebrow">AuRAT · 2026</p>
+      <h1 id="heroTitle" class="hero__title">
+        <span class="hero__title-line hero__title-line--accent">AuRAT, AI powered</span>
+        <span class="hero__title-line">women's safety</span>
+        <span class="hero__title-line hero__title-line--outline">ecosystem</span>
+      </h1>
+      <p class="hero__sub">
+        Elegance meets advanced AI protection. Wearable safety redefined for the modern woman.
+      </p>
+      <div class="hero__meta">
+        <span class="pill">AuRAT</span>
+        <span class="hero__scroll-hint" aria-hidden="true">Scroll to Explore</span>
+      </div>
+    </section>
+
+    <!-- Guardian Cycle Section (NEW) -->
+    <section class="band band--dark reveal" id="how-it-works">
+      <div class="band__inner">
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="section-title__label">The Guardian Cycle</span>
+            How AuRAT protects you
+          </h2>
+        </header>
+        
+        <div class="cycle-grid">
+          <div class="cycle-step reveal-stagger">
+            <div class="cycle-step__icon">
+              <!-- Detection Icon -->
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <circle cx="12" cy="11" r="3"/>
+              </svg>
+            </div>
+            <h3 class="cycle-step__title">1. Detection</h3>
+            <p class="cycle-step__text">Integrated GSR and Heart Rate sensors monitor for physiological stress and sudden threat patterns using Edge AI.</p>
+          </div>
+
+          <div class="cycle-step reveal-stagger">
+            <div class="cycle-step__icon">
+              <!-- Evidence Icon -->
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <circle cx="12" cy="10" r="3"/>
+                <path d="M16 3l1 2h3a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2h3l1-2h8z"/>
+              </svg>
+            </div>
+            <h3 class="cycle-step__title">2. Evidence</h3>
+            <p class="cycle-step__text">Upon detection, the 4K top-mounted camera and 24-bit microphone capture high-fidelity forensic evidence in real-time.</p>
+          </div>
+
+          <div class="cycle-step reveal-stagger">
+            <div class="cycle-step__icon">
+              <!-- Alert Icon -->
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="cycle-step__title">3. Alert</h3>
+            <p class="cycle-step__text">Emergency network and Personal AuRAT Guardians receive live feeds and GPS coordination to initiate priority response.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="band reveal" id="pricing">
+      <div class="band__inner">
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="section-title__label">Plans & Pricing</span>
+            Choose your level of protection
+          </h2>
+        </header>
+        
+        <div class="pricing-grid">
+          <!-- Lite -->
+          <div class="pricing-card glass-card reveal-stagger">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__title">Lite</h3>
+              <div class="pricing-card__price">₹2,999</div>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Smart Wearable Device</li>
+              <li>Edge AI Threat Detection</li>
+              <li>Real-time Location Alerts</li>
+              <li>Emergency Network Integration</li>
+              <li class="accent-feature">24/7 AuRAT Guardian</li>
+              <li class="accent-feature">Cloud Evidence Vault</li>
+            </ul>
+            <a href="#" class="btn btn--outline">Get Started</a>
+          </div>
+
+          <!-- Standard -->
+          <div class="pricing-card pricing-card--featured glass-card glass-card--accent reveal-stagger">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__title">Standard</h3>
+              <div class="pricing-card__price">₹3,999</div>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Everything in Lite</li>
+              <li class="accent-feature">Smarter AI Model</li>
+              <li class="accent-feature">Video Feature</li>
+              <li class="accent-feature">Customizable*</li>
+              <li>More Cloud Storage</li>
+            </ul>
+            <a href="#" class="btn btn--accent">Most Popular</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="pricing-card glass-card reveal-stagger">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__title">Premium</h3>
+              <div class="pricing-card__price">₹5,999</div>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Everything in Standard</li>
+              <li class="accent-feature">Flagship AI Model</li>
+              <li class="accent-feature">Better Video & Audio Quality</li>
+              <li class="accent-feature">Customizable Design</li>
+              <li>Better Quality Jewelry</li>
+              <li>Personal AuRAT Guardian</li>
+            </ul>
+            <a href="#" class="btn btn--outline">Go Premium</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="band band--accent reveal" id="features">
+      <div class="band__inner">
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="section-title__label">Features</span>
+            Unmatched Guardian Technology
+          </h2>
+        </header>
+
+        <div class="features-detailed">
+          <div class="features-column glass-card">
+            <h3 class="features-column__title">Lite</h3>
+            <ul class="features-list">
+              <li>Smart wearable device</li>
+              <li>Audio recording</li>
+              <li>Video recording</li>
+              <li>Cloud evidence vault</li>
+              <li>Edge AI threat detection</li>
+              <li>Emergency network integration</li>
+              <li>Real time location alert</li>
+              <li>Multi-language 24/7 helpline support</li>
+              <li>Few colour/design options</li>
+            </ul>
+          </div>
+          <div class="features-column glass-card">
+            <h3 class="features-column__title">Standard</h3>
+            <ul class="features-list">
+              <li>Everything in Lite</li>
+              <li>Real time video capture</li>
+              <li>More advanced AI model</li>
+              <li>Multiple colour design options</li>
+            </ul>
+          </div>
+          <div class="features-column glass-card">
+            <h3 class="features-column__title">Premium</h3>
+            <ul class="features-list">
+              <li>Everything in Standard</li>
+              <li>4K video and audio quality</li>
+              <li>Flagship AI model</li>
+              <li>Fully customizable product</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specs Table (NEW) -->
+    <section class="band band--dark" id="specs">
+      <div class="band__inner">
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="section-title__label">Tech Specs</span>
+            Deeper Intelligence
+          </h2>
+        </header>
+
+        <div class="specs-table-wrapper glass-card">
+          <table class="specs-table-premium">
+            <thead>
+              <tr>
+                <th>Infrastructure</th>
+                <th>Lite</th>
+                <th>Standard</th>
+                <th class="col-premium">Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feat-name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+                  AI Neural Engine
+                </td>
+                <td>Edge Gen 1</td>
+                <td>Smarter Core 2</td>
+                <td class="col-premium">Flagship Ultra 4</td>
+              </tr>
+              <tr>
+                <td class="feat-name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  Camera Resolution
+                </td>
+                <td>720p HD</td>
+                <td>1080p Full HD</td>
+                <td class="col-premium">4K Ultra HD</td>
+              </tr>
+              <tr>
+                <td class="feat-name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                  Audio Capture
+                </td>
+                <td>Mono · 16-bit</td>
+                <td>Stereo · 24-bit</td>
+                <td class="col-premium">Lossless · 32-bit</td>
+              </tr>
+              <tr>
+                <td class="feat-name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.77.78L12 21.41l7.65-7.65.77-.78a5.4 5.4 0 0 0 0-7.65z"/></svg>
+                  Medical Sensors
+                </td>
+                <td>Basic Sync</td>
+                <td>Predictive AI</td>
+                <td class="col-premium">Full Bio-Suite</td>
+              </tr>
+              <tr>
+                <td class="feat-name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A6 6 0 1 1 15.5 6a5 5 0 0 1 9.53 1.53 2 2 0 0 1 0 4.47 5 5 0 0 1-3.82 3.89z"/></svg>
+                  Cloud Vault
+                </td>
+                <td>2GB Lifetime</td>
+                <td>10GB Lifetime</td>
+                <td class="col-premium">Unlimited E2E</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="band reveal" id="product">
+      <div class="band__inner">
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="section-title__label">Our Collection</span>
+            Smart safety in every form
+          </h2>
+        </header>
+
+        <div class="product-grid">
+          <article class="product-item product-item--interactive reveal-stagger" id="triggerRing3D">
+            <div class="product-item__image">
+              <img src="assets/products/ring.png" alt="AuRAT Ring" loading="lazy">
+              <div class="product-item__3d-badge">Interactive 3D View</div>
+            </div>
+            <h3 class="product-item__name">AuRAT Ring</h3>
+          </article>
+
+          <article class="product-item reveal-stagger">
+            <div class="product-item__image">
+              <img src="assets/products/bracelet.png" alt="AuRAT Bracelet" loading="lazy">
+            </div>
+            <h3 class="product-item__name">AuRAT Bracelet</h3>
+          </article>
+
+          <article class="product-item reveal-stagger">
+            <div class="product-item__image">
+              <img src="assets/products/chain.png" alt="AuRAT Chain" loading="lazy">
+            </div>
+            <h3 class="product-item__name">AuRAT Chain</h3>
+          </article>
+
+          <article class="product-item reveal-stagger">
+            <div class="product-item__image">
+              <img src="assets/products/earring.png" alt="AuRAT Earring" loading="lazy">
+            </div>
+            <h3 class="product-item__name">AuRAT Earring</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Vision Section (EXPANDED) -->
+    <section class="band band--dark reveal" id="about">
+      <div class="band__inner">
+        <div class="vision-grid">
+          <div class="vision-content">
+            <h2 class="section-title">
+              <span class="section-title__label">Our Vision</span>
+              Building a world without compromise
+            </h2>
+            <p class="lede">
+              AuRAT was born from a simple belief: Nobody should have to trade elegance for safety. We are not just building gadgets; we are crafting a life-saving ecosystem that empowers women globally.
+            </p>
+            <p class="lede lede--accent">
+              Our AI doesn't just react—it anticipates. Our jewelry doesn't just sit—it protects. Always bringing the fight for safer cities and workplaces.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join the Genesis Section (NEW) -->
+    <section class="band band--accent reveal" id="waitlist">
+      <div class="band__inner">
+        <div class="waitlist-container glass-card">
+          <h2 class="section-title">
+            <span class="section-title__label">Genesis 2026</span>
+            Join the waitlist
+          </h2>
+          <p class="waitlist-sub">Be the first to wear the future of safety.</p>
+          <form class="waitlist-form">
+            <input type="email" placeholder="Enter your email" required class="waitlist-input">
+            <button type="submit" class="btn btn--accent">Reserve Spot</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Viewer Modal -->
+    <div class="modal" id="modal3D" hidden>
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" id="closeModal3D">&times;</button>
+        <iframe src="ring-3d.html" frameborder="0" class="modal__iframe"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__tagline">Always bringing the fight—for safer cities and workplaces.</p>
+    <p class="site-footer__legal">2026 · AuRAT · Premium Smart Safety Jewelry</p>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+  <div class="custom-cursor" id="cursor"></div>
+</body>
+
+</html>
